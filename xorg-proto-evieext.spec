@@ -1,5 +1,3 @@
-# $Rev: 3274 $, $Date: 2005-08-15 12:17:57 $
-#
 Summary:	EvIE protocol and ancillary headers
 Summary(pl):	Nag³ówki protoko³u EvIE i pomocnicze
 Name:		xorg-proto-evieext
@@ -12,9 +10,9 @@ Source0:	http://xorg.freedesktop.org/X11R7.0-RC0/proto/evieext-%{version}.tar.bz
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	xorg-util-util-macros
 BuildRequires:	pkg-config
-BuildRoot:	%{tmpdir}/evieext-%{version}-root-%(id -u -n)
+BuildRequires:	xorg-util-util-macros
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 
@@ -23,7 +21,6 @@ EvIE protocol and ancillary headers.
 
 %description -l pl
 Nag³ówki protoko³u EvIE i pomocnicze.
-
 
 %package devel
 Summary:	EvIE protocol and ancillary headers
@@ -37,10 +34,8 @@ EvIE protocol and ancillary headers.
 %description devel -l pl
 Nag³ówki protoko³u EvIE i pomocnicze.
 
-
 %prep
 %setup -q -n evieext-%{version}
-
 
 %build
 %{__aclocal}
@@ -50,7 +45,6 @@ Nag³ówki protoko³u EvIE i pomocnicze.
 
 %{__make}
 
-
 %install
 rm -rf $RPM_BUILD_ROOT
 
@@ -58,10 +52,8 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	pkgconfigdir=%{_pkgconfigdir}
 
-
 %clean
 rm -rf $RPM_BUILD_ROOT
-
 
 %files devel
 %defattr(644,root,root,755)
