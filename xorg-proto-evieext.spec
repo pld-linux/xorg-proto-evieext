@@ -5,8 +5,8 @@ Version:	1.0.2
 Release:	0.1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC4/proto/evieext-%{version}.tar.bz2
-# Source0-md5:	f4f22934941de43926bd39089461a680
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/proto/evieext-X11R7.0-%{version}.tar.bz2
+# Source0-md5:	411c0d4f9eaa7d220a8d13edc790e3de
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -32,7 +32,7 @@ EvIE protocol and ancillary headers.
 Nag³ówki protoko³u EvIE i pomocnicze.
 
 %prep
-%setup -q -n evieext-%{version}
+%setup -q -n evieext-X11R7.0-%{version}
 
 %build
 %{__aclocal}
