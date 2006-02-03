@@ -2,7 +2,7 @@ Summary:	EvIE protocol and ancillary headers
 Summary(pl):	Nag³ówki protoko³u EvIE i pomocnicze
 Name:		xorg-proto-evieext
 Version:	1.0.2
-Release:	0.1
+Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/proto/evieext-X11R7.0-%{version}.tar.bz2
