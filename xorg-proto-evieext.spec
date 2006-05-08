@@ -6,7 +6,7 @@ Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/evieext-%{version}.tar.bz2
-# Source0-md5:	411c0d4f9eaa7d220a8d13edc790e3de
+# Source0-md5:	2507b5d0f4b2848147fbddd155aa6cfe
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
