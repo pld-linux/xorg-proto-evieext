@@ -32,7 +32,7 @@ EvIE protocol and ancillary headers.
 Nag³ówki protoko³u EvIE i pomocnicze.
 
 %prep
-%setup -q -n evieext-X11R7.0-%{version}
+%setup -q -n evieext-%{version}
 
 %build
 %{__aclocal}
