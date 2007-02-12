@@ -1,5 +1,5 @@
 Summary:	EvIE protocol and ancillary headers
-Summary(pl):	Nag丑wki protoko硊 EvIE i pomocnicze
+Summary(pl.UTF-8):   Nag艂贸wki protoko艂u EvIE i pomocnicze
 Name:		xorg-proto-evieext
 Version:	1.0.2
 Release:	1
@@ -16,20 +16,20 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 EvIE protocol and ancillary headers.
 
-%description -l pl
-Nag丑wki protoko硊 EvIE i pomocnicze.
+%description -l pl.UTF-8
+Nag艂贸wki protoko艂u EvIE i pomocnicze.
 
 %package devel
 Summary:	EvIE protocol and ancillary headers
-Summary(pl):	Nag丑wki protoko硊 EvIE i pomocnicze
+Summary(pl.UTF-8):   Nag艂贸wki protoko艂u EvIE i pomocnicze
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-xproto-devel
 
 %description devel
 EvIE protocol and ancillary headers.
 
-%description devel -l pl
-Nag丑wki protoko硊 EvIE i pomocnicze.
+%description devel -l pl.UTF-8
+Nag艂贸wki protoko艂u EvIE i pomocnicze.
 
 %prep
 %setup -q -n evieext-%{version}
