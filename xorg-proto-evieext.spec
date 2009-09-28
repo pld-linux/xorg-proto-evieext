@@ -1,5 +1,5 @@
-Summary:	EvIE protocol and ancillary headers
-Summary(pl.UTF-8):	Nagłówki protokołu EvIE i pomocnicze
+Summary:	EvIE extension headers
+Summary(pl.UTF-8):	Nagłówki rozszerzenia EvIE
 Name:		xorg-proto-evieext
 Version:	1.1.0
 Release:	1
@@ -10,26 +10,26 @@ Source0:	http://xorg.freedesktop.org/releases/individual/proto/evieext-%{version
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	xorg-util-util-macros
+BuildRequires:	xorg-util-util-macros >= 1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-EvIE protocol and ancillary headers.
+EvIE extension headers.
 
 %description -l pl.UTF-8
-Nagłówki protokołu EvIE i pomocnicze.
+Nagłówki rozszerzenia EvIE.
 
 %package devel
-Summary:	EvIE protocol and ancillary headers
-Summary(pl.UTF-8):	Nagłówki protokołu EvIE i pomocnicze
+Summary:	EvIE extension headers
+Summary(pl.UTF-8):	Nagłówki rozszerzenia EvIE
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-xproto-devel
 
 %description devel
-EvIE protocol and ancillary headers.
+EvIE extension headers.
 
 %description devel -l pl.UTF-8
-Nagłówki protokołu EvIE i pomocnicze.
+Nagłówki rozszerzenia EvIE.
 
 %prep
 %setup -q -n evieext-%{version}
@@ -55,5 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %doc COPYING ChangeLog
-%{_includedir}/X11/extensions/*.h
+%{_includedir}/X11/extensions/Xeviestr.h
+%{_includedir}/X11/extensions/evieproto.h
 %{_pkgconfigdir}/evieproto.pc
