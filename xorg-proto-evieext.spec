@@ -2,7 +2,7 @@ Summary:	EvIE extension headers
 Summary(pl.UTF-8):	Pliki nagłówkowe rozszerzenia EvIE
 Name:		xorg-proto-evieext
 Version:	1.1.1
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/evieext-%{version}.tar.bz2
